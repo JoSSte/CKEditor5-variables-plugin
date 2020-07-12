@@ -1,6 +1,5 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import { toWidget } from '@ckeditor/ckeditor5-widget/src/utils';
-import Widget from '@ckeditor/ckeditor5-widget/src/widget';
 
 import InsertVariableCommand from './insertVariableCommand';
 
