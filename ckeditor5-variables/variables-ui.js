@@ -3,7 +3,7 @@ import { createDropdown, addListToDropdown } from '@ckeditor/ckeditor5-ui/src/dr
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import Model from '@ckeditor/ckeditor5-ui/src/model';
 import Collection from '@ckeditor/ckeditor5-utils/src/collection';
-import variableIcon from './theme/icons/variable2.svg';
+import variableIcon from './theme/icons/variable.svg';
 
 export default class VariablesUI extends Plugin {
     init() {
@@ -29,18 +29,18 @@ export default class VariablesUI extends Plugin {
                 type: 'button',
                 model: new Model({
                     description: 'Name of recipient',
-                    withText: true,
                     label: 'Name',
-                    variable: '[name]'
+                    variable: '[name]',
+                    withText: true
                 })
             } );
             items.add( {
                 type: 'button',
                 model: new Model({
                     description: 'recipient email',
-                    withText: true,
                     label: 'Email',
-                    variable: '[email]'
+                    variable: '[email]',
+                    withText: true
                 })
             } );
 
