@@ -7,12 +7,9 @@ import variableIcon from './theme/icons/variable.svg';
 
 export default class VariablesUI extends Plugin {
     init() {
-        console.log('VariablesUI#init() got called');
+        //console.log('VariablesUI#init() got called');
         const editor = this.editor;
-        const t = editor.t;
         const Vars = 'variables';
-
-        const command = editor.commands.get('insertVariable');
 
         // The button must be registered among the UI components of the editor
         // to be displayed in the toolbar.
@@ -71,7 +68,7 @@ export default class VariablesUI extends Plugin {
             dropdownView.on('execute', (eventInfo) => {
                 const { variable, label } = eventInfo.source;
                 console.log('Selected Variable:', variable, ' label: ', label);
-                editor.execute('insertVariable', { value: eventInfo.source.commandParam });
+                editor.execute('insertVariable', { value: eventInfo.source.commandParam, param: variable });
                 editor.editing.view.focus();
             });
 
