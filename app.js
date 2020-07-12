@@ -7,7 +7,9 @@ import Image from '@ckeditor/ckeditor5-image/src/image';
 import imageIcon from '@ckeditor/ckeditor5-core/theme/icons/image.svg';
 import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import Variables from './ckeditor5-variables/variables';     
+import Variables from './ckeditor5-variables/variables';
+import CodeSnippet from 'ckeditor5-code-snippet-plugin/dist/codesnippet';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize.js';
 
 class InsertImage extends Plugin {
     init() {
@@ -44,8 +46,8 @@ class InsertImage extends Plugin {
 
 ClassicEditor
     .create( document.querySelector( '#editor' ), {
-        plugins: [ Essentials, Paragraph, Bold, Italic, Image, InsertImage, Variables ],
-        toolbar: [ 'bold', 'italic', 'insertImage', 'variables' ]
+        plugins: [ Essentials, Paragraph, Bold, Italic, Image, InsertImage, Variables, FontSize, CodeSnippet ],
+        toolbar: [ 'bold', 'italic', 'insertImage', 'fontSize', 'variables', 'codeSnippet' ]
     } )
     .then( editor => {
         console.log( 'Editor was initialized', editor );
