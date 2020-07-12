@@ -2,7 +2,6 @@
   "name": "ckeditor5-variables-plugin",
   "version": "1.0.0",
   "description": "CKeditor 5 plugin to insert variables into your document",
-  "main": "app.js",
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^20.0.0",
     "@ckeditor/ckeditor5-essentials": "^20.0.0",
