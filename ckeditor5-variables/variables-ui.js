@@ -25,32 +25,54 @@ export default class VariablesUI extends Plugin {
             });
 
             const items = new Collection();
-            items.add( {
-                type: 'button',
-                model: new Model({
-                    description: 'Name of recipient',
-                    label: 'Name',
-                    variable: '[name]',
-                    withText: true
-                })
-            } );
-            items.add( {
-                type: 'button',
-                model: new Model({
-                    description: 'recipient email',
-                    label: 'Email',
-                    variable: '[email]',
-                    withText: true
-                })
-            } );
+
+            const varSource = editor.config.get('variablePlugin.source');
+
+            //populate options in dropdown
+            if (typeof varSource !== 'undefined') {
+                let json = require('./' + varSource);//TODO this is NOT the right way to open a file
+
+                json.forEach(function (item, index) {
+                    items.add({
+                        type: 'button',
+                        model: new Model({
+                            description: item.description,
+                            label: item.label,
+                            variable: item.variable,
+                            withText: true
+                        })
+                    });
+                });
+                console.error("external variable list not yet supported");
+            } else {
+                //console.log('no external config found. using default ');
+                items.add({
+                    type: 'button',
+                    model: new Model({
+                        description: 'Name of recipient',
+                        label: 'Name',
+                        variable: '[name]',
+                        withText: true
+                    })
+                });
+                items.add({
+                    type: 'button',
+                    model: new Model({
+                        description: 'recipient email',
+                        label: 'Email',
+                        variable: '[email]',
+                        withText: true
+                    })
+                });
+            }
 
             addListToDropdown(dropdownView, items);
 
             dropdownView.on('execute', (eventInfo) => {
                 const { variable, label } = eventInfo.source;
-                    console.log('Selected Variable:', variable, ' label: ', label);
-                    editor.execute( 'insertVariable', { value: eventInfo.source.commandParam } );
-				editor.editing.view.focus();
+                console.log('Selected Variable:', variable, ' label: ', label);
+                editor.execute('insertVariable', { value: eventInfo.source.commandParam });
+                editor.editing.view.focus();
             });
 
             return dropdownView;
