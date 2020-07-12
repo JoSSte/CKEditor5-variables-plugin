@@ -4,13 +4,25 @@
   "description": "CKeditor 5 plugin to insert variables into your document",
   "main": "app.js",
   "dependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^19.0.1",
+    "@ckeditor/ckeditor5-essentials": "^19.0.1",
+    "@ckeditor/ckeditor5-paragraph": "^19.1.0",
+    "@ckeditor/ckeditor5-editor-classic": "^19.0.1"
+  },
+  "devDependencies": {
     "postcss-loader": "^3.0.0",
-    "raw-loader": "^3.1.0",
+    "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "@ckeditor/ckeditor5-utils": "^19.0.1",
+    "@ckeditor/ckeditor5-core": "^19.0.1",
+    "@ckeditor/ckeditor5-widget": "^19.0.1",
+    "@ckeditor/ckeditor5-ui": "^19.0.1",
+    "@ckeditor/ckeditor5-theme-lark": "^19.1.0",
+    "@ckeditor/ckeditor5-dev-utils": "^20.0.0",
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^20.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
@@ -18,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoSSte/CKEditor5-variables.git"
+    "url": "git+https://github.com/JoSSte/CKEditor5-variables-plugin.git"
   },
   "keywords": [
     "ckeditor5-plugin"
@@ -26,7 +38,7 @@
   "author": "Jonas Stumph Stevnsvig",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JoSSte/CKEditor5-variables/issues"
+    "url": "https://github.com/JoSSte/CKEditor5-variables-plugin/issues"
   },
-  "homepage": "https://github.com/JoSSte/CKEditor5-variables#readme"
+  "homepage": "https://github.com/JoSSte/CKEditor5-variables-plugin#readme"
 }
