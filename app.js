@@ -3,11 +3,12 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Variables from './ckeditor5-variables/variables';
 
 ClassicEditor
     .create( document.querySelector( '#editor' ), {
-        plugins: [ Essentials, Paragraph, Bold, Italic ],
-        toolbar: [ 'bold', 'italic' ]
+        plugins: [ Essentials, Paragraph, Bold, Italic, Variables ],
+        toolbar: [ 'bold', 'italic', 'variables' ]
     } )
     .then( editor => {
         console.log( 'Editor was initialized', editor );
