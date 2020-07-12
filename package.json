@@ -1,5 +1,5 @@
 {
-  "name": "ckeditor5-variables",
+  "name": "ckeditor5-variables-plugin",
   "version": "1.0.0",
   "description": "CKeditor 5 plugin to insert variables into your document",
   "main": "app.js",
@@ -13,8 +13,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development",
-    "devBuild": "webpack -w --mode development"
+    "build": "webpack --mode production",
+    "buildDev": "webpack -w --mode development"
   },
   "repository": {
     "type": "git",

@@ -3,7 +3,7 @@ import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import Variables from './ckeditor5-variables/variables';
+import Variables from './ckeditor5-variables-plugin/variables';
 
 ClassicEditor
     .create(document.querySelector('#editor'), {
