@@ -6,13 +6,15 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Variables from './ckeditor5-variables/variables';
 
 ClassicEditor
-    .create( document.querySelector( '#editor' ), {
-        plugins: [ Essentials, Paragraph, Bold, Italic, Variables ],
-        toolbar: [ 'bold', 'italic', 'variables' ]
-    } )
-    .then( editor => {
-        console.log( 'Editor was initialized', editor );
-    } )
-    .catch( error => {
-        console.error( error.stack );
-    } );
+    .create(document.querySelector('#editor'), {
+        plugins: [Essentials, Paragraph, Bold, Italic, Variables],
+        toolbar: ['bold', 'italic', 'variables']
+        //variablePlugin: { source: 'defaultvars.json' }
+    }
+    )
+    .then(editor => {
+        console.log('Editor was initialized', editor);
+    })
+    .catch(error => {
+        console.error(error.stack);
+    });
