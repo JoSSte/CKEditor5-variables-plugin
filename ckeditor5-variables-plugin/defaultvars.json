@@ -1,0 +1,32 @@
+[
+    {
+        "description": "Recipient Name",
+        "label": "Name",
+        "variable": "[name]"
+    },
+    {
+        "description": "Recipient Email",
+        "label": "Email",
+        "variable": "[email]"
+    },
+    {
+        "description": "Name of logged in User",
+        "label": "Admin Name",
+        "variable": "[adminName]"
+    },
+    {
+        "description": "Email of logged in User",
+        "label": "Admin Email",
+        "variable": "[adminEmail]"
+    },
+    {
+        "description": "Today's date",
+        "label": "Date",
+        "variable": "[dateToday]"
+    },
+    {
+        "description": "Date of expiry",
+        "label": "Exp. Date",
+        "variable": "[dateExpire]"
+    }
+]
