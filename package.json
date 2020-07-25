@@ -18,9 +18,20 @@
     "@ckeditor/ckeditor5-core": "^20.0.0",
     "@ckeditor/ckeditor5-widget": "^20.0.0",
     "@ckeditor/ckeditor5-ui": "^20.0.0",
-    "@ckeditor/ckeditor5-theme-lark": "^20.0.0",
+    "@ckeditor/ckeditor5-autoformat": "^20.0.0",
+    "@ckeditor/ckeditor5-basic-styles": "^20.0.0",
+    "@ckeditor/ckeditor5-block-quote": "^20.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^21.0.0",
-    "@ckeditor/ckeditor5-dev-webpack-plugin": "^21.0.0"
+    "@ckeditor/ckeditor5-dev-webpack-plugin": "^21.0.0",
+    "@ckeditor/ckeditor5-font": "^20.0.0",
+    "@ckeditor/ckeditor5-heading": "^20.0.0",
+    "@ckeditor/ckeditor5-indent": "^20.0.0",
+    "@ckeditor/ckeditor5-link": "^20.0.0",
+    "@ckeditor/ckeditor5-list": "^20.0.0",
+    "@ckeditor/ckeditor5-paste-from-office": "^20.0.0",
+    "@ckeditor/ckeditor5-remove-format": "^20.0.0",
+    "@ckeditor/ckeditor5-theme-lark": "^20.0.0",
+    "@ckeditor/ckeditor5-typing": "^20.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
