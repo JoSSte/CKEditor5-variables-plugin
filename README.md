@@ -8,7 +8,7 @@ Adds a dropdown button with a json-backed list of variables for use in templatin
 
 To configure the plugin, add the `Variables` to the list of plugins, as it says in the documentaion `variablePlugin` configuration to your editor config with the path to look for the variable configuration.
 
-```
+``` js
 ClassicEditor
     .create(document.querySelector('#editor'), {
         plugins: [... , Variables],
@@ -30,7 +30,7 @@ The minimum requirement is that each variable has a `label` and a `variable`.
 
 __defaultvars.json:__
 
-```
+``` json
 [
     {
         "description": "Recipient Name",
