@@ -4,9 +4,9 @@
   "description": "CKeditor 5 plugin to insert variables into your document",
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^20.0.0",
-    "@ckeditor/ckeditor5-essentials": "^20.0.0",
+    "@ckeditor/ckeditor5-essentials": "^26.0.0",
     "@ckeditor/ckeditor5-paragraph": "^20.0.0",
-    "@ckeditor/ckeditor5-editor-classic": "^20.0.0"
+    "@ckeditor/ckeditor5-editor-classic": "^26.0.0"
   },
   "devDependencies": {
     "postcss-loader": "^3.0.0",
